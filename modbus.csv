@@ -1,0 +1,183 @@
+﻿description,Address,Type,Scalefactor,writable,dbus-unit
+Input voltage phase 1,3,uint16,10,no,V AC
+Input voltage phase 2,4,uint16,10,no,V AC
+Input voltage phase 3,5,uint16,10,no,V AC
+Input current phase 1,6,int16,10,no,A AC
+Input current phase 2,7,int16,10,no,A AC
+Input current phase 3,8,int16,10,no,A AC
+Input frequency 1,9,int16,100,no,Hz
+Input frequency 2,10,int16,100,no,Hz
+Input frequency 3,11,int16,100,no,Hz
+Input power 1,12,int16,0.1,no,VA or Watts
+Input power 2,13,int16,0.1,no,VA or Watts
+Input power 3,14,int16,0.1,no,VA or Watts
+Output voltage phase 1,15,uint16,10,no,V AC
+Output voltage phase 2,16,uint16,10,no,V AC
+Output voltage phase 3,17,uint16,10,no,V AC
+Output current phase 1,18,int16,10,no,A AC
+Output current phase 2,19,int16,10,no,A AC
+Output current phase 3,20,int16,10,no,A AC
+Output frequency,21,int16,100,no,Hz
+Active input current limit,22,int16,10,yes,A
+Output power 1,23,int16,0.1,no,VA or Watts
+Output power 2,24,int16,0.1,no,VA or Watts
+Output power 3,25,int16,0.1,no,VA or Watts
+Battery voltage,26,uint16,100,no,V DC
+Battery current,27,int16,10,no,A DC
+Phase count,28,uint16,1,no,count
+Active input,29,uint16,1,no,0=AC Input 1;1=AC Input 2;240=Disconnected
+VE.Bus state of charge,30,uint16,10,yes,%
+VE.Bus state,31,uint16,1,no,0=Off;1=Low Power;2=Fault;3=Bulk;4=Absorption;5=Float;6=Storage;7=Equalize;8=Passthru;9=Inverting;10=Power assist;11=Power supply;244=Sustain;252=External control
+VE.Bus Error,32,uint16,1,no,0=No error;1=VE.Bus Error 1: Device is switched off because one of the other phases in the system has switched off;2=VE.Bus Error 2: New and old types MK2 are mixed in the system;3=VE.Bus Error 3: Not all- or more than- the expected devices were found in the system;4=VE.Bus Error 4: No other device whatsoever detected;5=VE.Bus Error 5: Overvoltage on AC-out;6=VE.Bus Error 6: Error in DDC Program;7=VE.Bus BMS connected- which requires an Assistant- but no assistant found;10=VE.Bus Error 10: System time synchronisation problem occurred;14=VE.Bus Error 14: Device cannot transmit data;16=VE.Bus Error 16: Dongle missing;17=VE.Bus Error 17: One of the devices assumed master status because the original master failed;18=VE.Bus Error 18: AC Overvoltage on the output of a slave has occurred while already switched off;22=VE.Bus Error 22: This device cannot function as slave;24=VE.Bus Error 24: Switch-over system protection initiated;25=VE.Bus Error 25: Firmware incompatibility. The firmware of one of the connected device is not sufficiently up to date to operate in conjunction with this device;26=VE.Bus Error 26: Internal error
+Switch Position,33,uint16,1,yes,1=Charger Only;2=Inverter Only;3=On;4=Off
+Temperature alarm,34,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Low battery alarm,35,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Overload alarm,36,uint16,1,no,0=Ok;1=Warning;2=Alarm
+ESS power setpoint phase 1,37,int16,1,yes,W
+ESS disable charge flag phase,38,uint16,1,yes,0=Charge allowed;1=Charge disabled
+ESS disable feedback flag phase,39,uint16,1,yes,0=Feed in allowed;1=Feed in disabled
+ESS power setpoint phase 2,40,int16,1,yes,W
+ESS power setpoint phase 3,41,int16,1,yes,W
+Temperatur sensor alarm,42,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Voltage sensor alarm,43,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Temperature alarm L1,44,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Low battery alarm L1,45,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Overload alarm L1,46,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Ripple alarm L1,47,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Temperature alarm L2,48,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Low battery alarm L2,49,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Overload alarm L2,50,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Ripple alarm L2,51,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Temperature alarm L3,52,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Low battery alarm L3,53,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Overload alarm L3,54,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Ripple alarm L3,55,uint16,1,no,0=Ok;1=Warning;2=Alarm
+Disable PV inverter,56,uint16,1,yes,0=PV enabled;1=PV disabled
+VE.Bus BMS allows battery to be charged,57,uint16,1,no,0=No;1=Yes
+VE.Bus BMS allows battery to be discharged,58,uint16,1,no,0=No;1=Yes
+VE.Bus BMS is expected,59,uint16,1,no,0=No;1=Yes
+VE.Bus BMS error,60,uint16,1,no,0=No;1=Yes
+Battery temperature,61,int16,10,no,Degrees celsius
+VE.Bus Reset,62,uint16,1,yes,1=VE.Bus reset
+Phase rotation warning,63,uint16,1,no,0=Ok;1=Warning
+Grid lost alarm,64,uint16,1,no,0=Ok;2=Alarm
+Feed DC overvoltage into grid,65,uint16,1,yes,0=Feed in overvoltage;1=Do not feed in overvoltage
+Maximum overvoltage feed-in power L1,66,uint16,0.01,yes,W
+Maximum overvoltage feed-in power L2,67,uint16,0.01,yes,W
+Maximum overvoltage feed-in power L3,68,uint16,0.01,yes,W
+AC input 1 ignored,69,uint16,1,no,0=AC input not ignored;1=AC input ignored
+AC input 2 ignored,70,uint16,1,no,0=AC input not ignored;1=AC input ignored
+AcPowerSetpoint acts as feed-in limit,71,uint16,1,yes,0=AcPowerSetpoint interpreted normally; 1=AcPowerSetpoint is OvervoltageFeedIn limit
+Solar offset voltage,72,uint16,1,yes,0=OvervoltageFeedIn uses 1V offset; 1=OvervoltageFeedIn uses 0.1V offset
+Sustain active,73,uint16,1,no,0=Sustain inactive; 1=Sustain active
+Energy from AC-In 1 to AC-out,74,uint32,100,no,kWh
+Energy from AC-In 1 to battery,76,uint32,100,no,kWh
+Energy from AC-In 2 to AC-out,78,uint32,100,no,kWh
+Energy from AC-In 2 to battery,80,uint32,100,no,kWh
+Energy from AC-out to AC-in 1 (reverse fed PV),82,uint32,100,no,kWh
+Energy from AC-out to AC-in 2 (reverse fed PV),84,uint32,100,no,kWh
+Energy from battery to AC-in 1,86,uint32,100,no,kWh
+Energy from battery to AC-in 2,88,uint32,100,no,kWh
+Energy from battery to AC-out,90,uint32,100,no,kWh
+Energy from AC-out to battery (typically from PV-inverter),92,uint32,100,no,kWh
+Low cell voltage imminent,94,uint16,1,no,0=OK;1=Warning
+Charge state,95,uint16,1,no,0=Initialising;1=Bulk;2=Absorption;3=Float;4=Storage;5=Absorb repeat;6=Forced absorb;7=Equalise;8=Bulk stopped;9=Unknown
+ESS power setpoint phase 1,96,int32,1,yes,W
+ESS power setpoint phase 2,98,int32,1,yes,W
+ESS power setpoint phase 3,100,int32,1,yes,W
+Prefer Renewable Energy,102,uint16,1,yes,0=Renewable energy not preferred;1=Renewable energy preferred
+Select Remote Generator,103,uint16,1,yes,0=Generator not selected;1=Generator selected
+Remote generator selected,104,uint16,1,no,0=Generator not selected;1=Generator selected
+Redetect VE.Bus system,105,uint16,1,yes,0=No action;1=Redetect system
+Power Assist boost factor,106,uint16,100,yes,
+Configured output voltage,107,uint16,100,yes,V AC
+PowerAssist enabled,108,uint16,1,yes,0=Disabled;1=Enabled
+UPS function enabled,109,uint16,1,yes,0=Disabled;1=Enabled
+Serial (System),800,string[6],1,no,
+CCGX Relay 1 state,806,uint16,1,yes,0=Open;1=Closed
+CCGX Relay 2 state,807,uint16,1,yes,0=Open;1=Closed
+PV - AC-coupled on output L1,808,uint16,1,no,W
+PV - AC-coupled on output L2,809,uint16,1,no,W
+PV - AC-coupled on output L3,810,uint16,1,no,W
+PV - AC-coupled on input L1,811,uint16,1,no,W
+PV - AC-coupled on input L2,812,uint16,1,no,W
+PV - AC-coupled on input L3,813,uint16,1,no,W
+PV - AC-coupled on generator L1,814,uint16,1,no,W
+PV - AC-coupled on generator L2,815,uint16,1,no,W
+PV - AC-coupled on generator L3,816,uint16,1,no,W
+AC Consumption L1,817,uint16,1,no,W
+AC Consumption L2,818,uint16,1,no,W
+AC Consumption L3,819,uint16,1,no,W
+Grid L1,820,int16,1,no,W
+Grid L2,821,int16,1,no,W
+Grid L3,822,int16,1,no,W
+Genset L1,823,int16,1,no,W
+Genset L2,824,int16,1,no,W
+Genset L3,825,int16,1,no,W
+Active input source,826,int16,1,no,0=Unknown;1=Grid;2=Generator;3=Shore power;240=Not connected
+System time in UTC,830,uint64,1,no,seconds
+Battery Voltage (System),840,uint16,10,no,V DC
+Battery Current (System),841,int16,10,no,A DC
+Battery Power (System),842,int16,1,no,W
+Battery State of Charge (System),843,uint16,1,no,%
+Battery state (System),844,uint16,1,no,0=idle;1=charging;2=discharging
+Battery Consumed Amphours (System),845,uint16,-10,no,Ah
+Battery Time to Go (System),846,uint16,0.01,no,s
+PV - DC-coupled power,850,uint16,1,no,W
+PV - DC-coupled current,851,int16,10,no,A DC
+Charger power,855,uint16,1,no,W
+DC System Power,860,int16,1,no,W
+VE.Bus charge current (System),865,int16,10,no,A DC
+VE.Bus charge power (System),866,int16,1,no,W
+RESERVED,867,uint16,1,no,
+Inverter/Charger current,868,int32,10,no,
+Inverter/Charger power,870,int32,1,no,
+"Power between meter and inverter/charger, L1",872,int32,1,no,W
+"Power between meter and inverter/charger, L2",874,int32,1,no,W
+"Power between meter and inverter/charger, L3",876,int32,1,no,W
+"Power on output of inverter/charger, L1",878,int32,1,no,W
+"Power on output of inverter/charger, L2",880,int32,1,no,W
+"Power on output of inverter/charger, L3",882,int32,1,no,W
+ESS control loop setpoint,2700,int16,1,yes,W
+ESS max charge current (fractional),2701,uint16,1,yes,%
+ESS max discharge current (fractional),2702,uint16,1,yes,%
+ESS control loop setpoint,2703,int16,0.01,yes,W
+ESS max discharge current,2704,int16,0.1,yes,W
+DVCC system max charge current,2705,int16,1,yes,A DC
+Maximum System Grid Feed In,2706,int16,0.01,yes,W
+Feed excess DC-coupled PV into grid,2707,int16,1,yes,0=Don’t feed excess DC-tied PV into grid; 1=Feed excess DC-tied PV into the grid
+Don’t feed excess AC-coupled PV into grid,2708,int16,1,yes,0=Feed excess AC-tied PV into grid; 1=Don’t feed excess AC-tied PV into the grid
+Grid limiting status,2709,int16,1,no,0=Feed-in limiting is inactive; 1=Feed-in limiting is active
+Limit managed battery voltage,2710,uint16,10,yes,V DC
+AC input 1 source (for VE.Bus inverter/chargers),2711,uint16,1,yes,0=Unused;1=Grid;2=Genset;3=Shore
+AC input 2 source (for VE.Bus inverter/chargers),2712,uint16,1,yes,0=Unused;1=Grid;2=Genset;3=Shore
+AC export limit when peakshaving,2713,int16,1,yes,
+AC import limit when peakshaving,2714,int16,1,yes,
+Mode for peakshaving,2715,uint16,1,yes,0=Above minimum SOC only;1=Always
+"AC grid setpoint (volatile, in memory)",2716,int32,1,yes,W
+Grid metering,2717,uint16,1,yes,0=External meter;1=Inverter/Charger
+ESS BatteryLife state,2900,uint16,1,yes,"0=Unused, BL disabled;1=Restarting;2=Self-consumption;3=Self-consumption;4=Self-consumption;5=Discharge disabled;6=Force charge;7=Sustain;8=Low Soc Recharge;9=Keep batteries charged;10=BL Disabled;11=BL Disabled (Low SoC);12=BL Disabled (Low SOC recharge)"
+ESS Minimum SoC (unless grid fails),2901,uint16,10,yes,%
+ESS Mode,2902,uint16,1,yes,1=ESS with Phase Compensation;2=ESS without phase compensation;3=Disabled/External Control
+ESS BatteryLife SoC limit (read only),2903,uint16,10,no,%
+Auto start enabled,4701,uint16,1,yes,0=Disabled;1=Enabled
+Mode,4702,uint16,1,yes,0=Auto;1=On;2=Off
+Start value,4703,uint16,1,yes,%
+Stop value,4704,uint16,1,yes,%
+Dynamic ESS state,5400,uint16,1,no,0=Off;1=Active
+Allow grid feed-in,5401,uint16,1,no,0=Not allowed;1=Allowed
+Is Dynamic ESS available,5402,uint16,1,no,0=System is not capable of doing DynamicEss;1=System is capable of doing DynamicEss
+Calculated rate of charge/discharge,5403,uint16,0.1,no,
+Error,5404,uint16,1,no,0=No error;1=No ESS;2=ESS mode;3=No matching schedule;4=SOC low;5=Battery capacity not configured
+Used strategy for current time slot,5406,uint16,1,no,0=Target SOC;1=Self-consumption
+The set target SOC for this time slot,5407,uint16,1,no,%
+Battery capacity,5420,uint16,10,yes,kWh
+Full battery charge duration,5421,uint16,1,yes,hour
+Full battery charge interval,5422,uint16,1,yes,day
+Dynamic ESS mode,5423,uint16,1,yes,0=Off;1=Auto;4=Node-RED
+Allow grid feed-in during this schedule,5424,uint16,1,yes,0=Not allowed;1=Allowed
+Duration for this schedule,5425,uint16,1,yes,Seconds
+Active restrictions for this schedule,5426,uint16,1,yes,0=No restrictions between battery and the grid;1=Grid to battery energy flow is restricted;2=Battery to grid energy flow is restricted;3=No energy flow between battery and grid
+Target SOC for this schedule,5427,uint16,1,yes,%
+Unix timestamp when this schedule starts,5428,int32,1,yes,
+Used strategy for this schedule,5429,uint16,1,yes,0=Target SOC;1=Self-consumption
